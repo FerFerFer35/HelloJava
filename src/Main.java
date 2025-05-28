@@ -1,28 +1,34 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
+        Random rand = new Random();
 
-        int limiter = 5;
+        int intents = 0;
 
         ArrayList<Integer> list = new ArrayList<>();
-        while(true){
-            System.out.println("Ingresa un número para ingresar a la lista: ");
-            int numero = sc.nextInt();
-            list.add(numero);
-            System.out.println(list);
 
-            if(list.size() >= limiter){
-                System.out.println("Has superado el limite en la lista");
-                list.clear();
-                System.out.println(list);
-                break;
+        int num = rand.nextInt(100);
+        System.out.println(num);
+
+        while(num != 50){
+            list.add(num);
+            System.out.println("Lista: " + list);
+            num = rand.nextInt(100);
+            for(int number : list){
+                if(number == num){
+                    System.out.println("Encontramos un numero repetido");
+                    System.out.println(number);
+                }
             }
+            System.out.println("Numero aleatorio: " + num);
+            intents++;
+            System.out.println("Intentos: " + intents);
         }
     }
 }
