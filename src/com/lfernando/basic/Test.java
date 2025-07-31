@@ -40,13 +40,13 @@ public class Test {
             perro.indexS(); // Llama otro método si no es 1
         }
 
-        String word = "Porpose";
+        String word = "Purpose";
         StringBuilder reverseWord = new StringBuilder(word).reverse();
         System.out.println(reverseWord.toString());*/
 
-        Map<String, Integer> myMap = new HashMap<>();
-        myMap.put("Luis", 23);
-        System.out.println(myMap.get("Luis"));
+        Map<Integer, String> myMap = new HashMap<>();
+        myMap.put(1, "Fernando");
+        System.out.println(myMap.get(1));
 
     }
 }
