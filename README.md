@@ -48,7 +48,7 @@ Pasos recomendados:
 
 1. Clona el repositorio:
 
-   `git clone https://github.com/tu-usuario/curso-java.git`
+   `https://github.com/FerFerFer35/HelloJava.git`
 
 2. Abre la carpeta del proyecto en tu IDE.
 3. Navega a cualquier archivo `.java` dentro de las carpetas mencionadas y ejecútalo.
